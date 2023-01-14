@@ -1,15 +1,16 @@
 {
     "version": 2,
+    "name": "CRUD-HTA-BE",
     "builds": [
         {
-            "src": "index.js",
-            "use": "@now/node"
+            "src": "script.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "index.js"
+            "dest": "/index.js"
         }
     ]
 }
